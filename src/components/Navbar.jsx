@@ -44,7 +44,7 @@ const Navbar = () => {
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </Link>
                     ))}
-                     <a  href=" https://wa.me/03423135480"
+                     <a  href=" https://wa.me/+923423135480"
                     className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
                         whatsapp
                     </a>
