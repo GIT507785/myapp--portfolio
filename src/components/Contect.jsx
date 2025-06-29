@@ -78,10 +78,10 @@ const [result, setResult] = React.useState("");
         <div className="flex flex-col justify-center">
           <h3 className="text-2xl font-semibold mb-4">Let’s Work Together</h3>
           <p className="text-gray-600 mb-6">
-            I’m open to freelance opportunities, collaboration, and full-time roles. If you have an idea or project in mind, don’t hesitate to reach out!
-          </p>
+            I'm open to freelance opportunities, collaboration, and full-time roles. If you have an idea or project in mind, don’t hesitate to reach out!
+          </p> 
           <ul className="text-gray-700 space-y-3">
-            <li><strong>Email:</strong> hafizhaseeb4480.com</li>
+            <li><strong>Email:</strong> hafizhaseeb4480@gmail.com</li>
             <li><strong>Location:</strong> Faislabad , Pakistan</li>
             <li><strong>Available for:</strong> Remote & Onsite</li>
           </ul>

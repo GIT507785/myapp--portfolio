@@ -16,7 +16,8 @@ Aos.init({duration: 1000})
       <div data-aos = 'fade-down'    className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Text Content */}
         <div className="md:w-1/2">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl  bg-gradient-to-l  from-orange-500 to-pink-600   text-transparent   
+          bg-clip-text  font-extrabold leading-tight mb-6">
             Hi, I’m <span className="text-blue-500">HASEEB</span><br />
             A Web Developer Who Builds Beautiful Interfaces
           </h1>

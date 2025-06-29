@@ -82,16 +82,15 @@ const Projects = () => {
   
 
     
-    <div  data-aos = 'fade-up'   className='mt-10   justify-center items-center' >
+    <div  data-aos = 'fade-up'   className='mt-10   bg-gray-100  justify-center items-center' >
       <h1 className='text-3xl flex  justify-center md:text-5xl lg:text-6xl   font-bold  '> My latest work</h1>
-           <div className='mt-5 flex  flex-col md:grid grid-cols-2 px-32 gap-8  mt-15'>
-            <img src={img1} alt=""  className='w-[300px]'  /> 
+           <div className='mt-5 flex  flex-col md:grid grid-cols-2 md:px-32  gap-8  mt-15'>
+            <img src={img1} alt=""  className='w-[300px] '  /> 
             <img src={img2} alt="" className='w-[300px]' /> 
             <img src={img3} alt="" className='w-[300px]' /> 
-            <img src={img4} alt=""   className='w-[300px]'/>  
-            <img src={img5} alt=""  className='w-[300px]'/> 
-            <img src={img6} alt=""  className='w-[300px]'/> 
-
+            <img src={img4} alt=""   className='w-[300px] h-[200px]'/>  
+            <img src={img5} alt=""  className='w-[300px] h-[200px]'/> 
+            <img src={img6} alt=""  className='w-[300px] h-[200px] mb-5 '/> 
            </div>
 
 

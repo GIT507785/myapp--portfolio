@@ -14,13 +14,13 @@ const Navbar = () => {
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-    // React.useEffect(() => {
-    //     const handleScroll = () => {
-    //         setIsScrolled(window.scrollY > 10);
-    //     };
-    //     window.current("scroll", handleScroll);
-    //     return () => window.removeEventListener("scroll", handleScroll);
-    // }, []); 
+         React.useEffect(() => {
+         const handleScroll = () => {
+             setIsScrolled(window.scrollY > 50);
+         };
+         window.addEventListener("scroll", handleScroll);
+         return () => window.removeEventListener("scroll", handleScroll);
+     }, []); 
 
     return (
         <div > 
@@ -45,9 +45,9 @@ const Navbar = () => {
                         </Link>
                     ))}
                      <a  href=" https://wa.me/+923423135480"
-                    className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
-                        whatsapp
-                    </a>
+                    className={`border px-4 py-1 hover:bg-green-400  hover:scale-y    duration-1   text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                        whatsapp 
+                    </a> 
                 </div>
 
                 {/* Desktop Right */}
@@ -85,9 +85,11 @@ const Navbar = () => {
                         </a>
                     ))}
 
-                    <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
-                        Download Cv 
-                     </button>
+                     <a  href=" https://wa.me/+923423135480"
+                    className={`border px-4 py-1 text-sm bg-red-400  font-light rounded-full cursor-pointer 
+                     ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                        whatsapp 
+                    </a>  
 
                     {/* <button className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
                         Login
