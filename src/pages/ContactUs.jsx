@@ -32,7 +32,7 @@ const [result, setResult] = React.useState("");
       <div className=' mt-[100px]'>
         <hr  className='px-32 mt-[-50px] text-gray-400'/>
         <p className='mt-8'>
-            Thank you for your interest in our guest posting services.
+            Thank you for your interest in our  Developing servicies  services.
              We are glad to hear that you found our experience impressive and would like to work with us.     </p>
 <br />
              <p> If you have any specific requirements or questions about our services, please don't hesitate to contact us. We are more than happy to help and provide you with a personalized solution that meets your needs.</p>
@@ -51,7 +51,6 @@ const [result, setResult] = React.useState("");
  <div className='md:flex  sm:flex-cols  sm:mb-14    mt-20 gap-10'>
           <div>
 <h1 className='text-3xl md:text-5xl  lg:text-6xl  text-blue-800  font-semibold'> Thank You So Much</h1> 
-
 <p className='mt-7'>  I would like to express my sincere gratitude for taking the time to review my portfolio.</p> 
 <br /> 
 <p> Your interest and attention to my work are highly appreciated, and I hope that it <br /> has provided you with valuable insights into my expertise and capabilities.</p>

@@ -7,11 +7,12 @@ import Navbar from "./components/Navbar";
 import Projects from "./pages/Projects";
 import Testimonials from "./pages/Testimonials";
 import ContactUs from "./pages/ContactUs";
-
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
-<div>
+<div>   
+  <ScrollToTop/> 
 <Navbar/>     
       <Routes>
         <Route path="/" element={<Home />} />

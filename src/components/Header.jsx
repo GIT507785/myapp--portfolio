@@ -12,7 +12,7 @@ Aos.init({duration: 1000})
   }, [] )
   return (
     <section  
-      className="bg-gray-900 text-white py-20 mt-[60px]  px-6 md:px-16">
+      className="bg-gradient-to-r from-black to-pink-900  text-white py-20 mt-[60px]  px-6 md:px-16">
       <div data-aos = 'fade-down'    className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Text Content */}
         <div className="md:w-1/2">

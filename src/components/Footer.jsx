@@ -1,5 +1,6 @@
 import React from "react"
 
+
 const Footer = () => {
     return (
         <footer className="px-6 pt-8 md:px-16 lg:px-36 bg-black  w-full text-gray-300">
