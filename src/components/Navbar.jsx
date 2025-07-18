@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { href, Link } from "react-router-dom";
-
+import logo from "../assets/Logo.svg"
+import { link } from "framer-motion/client";
 
 const Navbar = () => {
     const navLinks = [
@@ -10,7 +11,7 @@ const Navbar = () => {
         { name: 'Testimonials', path : '/testimonials' },
     ];
 
-
+const [menu , setMenu] = useState(link.name)
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -31,13 +32,17 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <a href="/"  className="flex items-center gap-2">
-                    <img src={"https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoWhite.svg"} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
+                    <img src={logo} 
+                         />
                 </a>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
-                        <Link key={i}  to={link.path}   className={`group cursor-pointer flex 
+                        <Link key={i}  to={link.path}  
+                        onClick={()=>setMenu(link.name)} 
+
+                        className={`group cursor-pointer flex ${menu===(link.name) ? 'border-b-3   border-red-800 ' : ''}  
                             flex-col gap-0.5 ${isScrolled ? "text-gray-700"
                          : "text-white"}`}>
                             {link.name}
@@ -59,7 +64,7 @@ const Navbar = () => {
                     <button className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
                         Login
                     </button> 
-                </div>  */}
+                </div>  */} 
 
                 {/* Mobile Menu Button */}
                 <div className="flex items-center gap-3 md:hidden">

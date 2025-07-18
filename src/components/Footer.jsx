@@ -1,12 +1,12 @@
 import React from "react"
-
+import logo from "../assets/Logo.svg"
 
 const Footer = () => {
     return (
         <footer className="px-6 pt-8 md:px-16 lg:px-36 bg-black  w-full text-gray-300">
             <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-10">
                 <div className="md:max-w-96">
-                    <img className="w-36 h-auto" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoWhite.svg" alt="logo" />
+                    <img className="w-36 h-auto" src={logo} alt="logo" />
                     <p className="mt-6 text-sm">
                        Hello! I’m HASEEB, a passionate Web Developer focused on building modern and responsive websites using technologies like React, Tailwind CSS, and Next.js. I love clean design, scalable code, and solving real-world problems.
                     </p>

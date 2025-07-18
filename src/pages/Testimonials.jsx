@@ -4,7 +4,8 @@ import React from "react";
 const Testimonials = () => {
   return (
     <div>
-      <h1 className="mt-[130px] flex justify-center text-3xl font-bold  md:text-5xl lg:text-6xl  ">
+      <h1 className="mt-[130px] flex justify-center text-3xl font-bold  md:text-5xl lg:text-6xl  
+      bg-gradient-to-r   from-green-400  to-sky-500 text-transparent bg-clip-text   ">
         {" "}
         Testimonials
       </h1>
@@ -268,12 +269,12 @@ const Testimonials = () => {
         </div>
 
  <div className="flex flex-col  md:px-10 sm:px-4   py-10">
- <h1 className="text-2xl   md:text-5xl  font-bold mt-3  text-purple-900  
+ <h1 className="text-2xl   md:text-5xl    font-bold mt-3  text-purple-900  
  font-serif   flex justify-center mb-10   " > Create Your Perfect Brand</h1>
 <div>
-    <h1 className="text-xl md:text-4xl font-bold mt-3 ">  Instant brand creation</h1>
+    <h1 className="text-xl md:text-4xl font-bold mt-3  text-blue-800  ">  Instant brand creation</h1>
     <p className="text-base text-gray-800 mt-1" > 
-         <span className="font-bold text-blactext-xl">*</span>   
+         <span className="font-bold text-blactext-xl text-blue-800 ">*</span>   
          In today's fast-paced digital world, speed is everything — and so is identity. Instant brand creation empowers entrepreneurs, startups, and creators to go from idea to brand in record time. Whether it's launching a product, a personal brand, or a new service, this approach uses smart tools, AI-driven design, and strategic clarity to build a professional, cohesive brand in hours — not weeks.
 
          <br /> 
@@ -285,18 +286,18 @@ const Testimonials = () => {
  
  {/* */}
 <div>
-    <h1 className="text-xl md:text-4xl font-bold  mt-4 " > Effortless Consistency  </h1>
+    <h1 className="text-xl md:text-4xl font-bold  text-blue-800  mt-4 " > Effortless Consistency  </h1>
     <p className="text-base text-gray-800 mt-1" >  
-         <span className="font-bold text-blactext-xl">*</span>  Consistency is the cornerstone of trust. But maintaining it across every touchpoint — from social posts to packaging — can be overwhelming. That’s where effortless consistency comes in.
+         <span className="font-bold text-blue-800  text-blactext-xl">*</span>  Consistency is the cornerstone of trust. But maintaining it across every touchpoint — from social posts to packaging — can be overwhelming. That’s where effortless consistency comes in.
 
          With the right tools and systems in place, your brand can deliver a unified message, voice, and visual identity everywhere it appears — without constant oversight. From auto-applied brand templates to content guidelines and smart automation, effortless consistency removes the friction of brand management and replaces it with fluid, scalable execution.
         </p>
 </div> 
 {/*  */}
 <div>
-    <h1 className="text-xl md:text-4xl font-bold mt-4 " >  AI-Powered Precision </h1>
-    <p className="text-base text-gray-800 mt-1" >  
-         <span className="font-bold text-blactext-xl">*</span>  In an age where data drives everything, AI-powered precision is redefining how brands operate, create, and grow. By harnessing advanced algorithms and real-time insights, AI delivers unmatched accuracy — whether you're targeting the right audience, optimizing content, or refining design elements. 
+    <h1 className="text-xl md:text-4xl font-bold mt-4  text-blue-800 " >  AI-Powered Precision </h1>
+    <p className="text-base text-gray-800 mt-1 " >  
+         <span className="font-bold text-blactext-xl text-blue-800 ">*</span>  In an age where data drives everything, AI-powered precision is redefining how brands operate, create, and grow. By harnessing advanced algorithms and real-time insights, AI delivers unmatched accuracy — whether you're targeting the right audience, optimizing content, or refining design elements. 
 
          This isn’t guesswork — it’s strategy backed by intelligent systems that learn, adapt, and improve. From personalized customer experiences to predictive analytics and design automation, AI turns complex decisions into confident actions.
         </p>
@@ -305,18 +306,18 @@ const Testimonials = () => {
 
       </div>
 
-      <div className="flex justify-between mb-20  py-4 md:px-7    sm:px-2 bg-gradient-to-r   from-white  to-green-600">
-        <div className="border-r-3">
+      <div className="flex justify-between mb-20  py-4 md:px-7    sm:px-2 bg-gradient-to-r   from-white to-sky-500 ">
+        <div className="border-r-3 pr-4 border-gray-500 ">
           <p className="text-2xl">4+</p>
           <p className="text-xl font-bold">Years of experiance</p>
         </div>
 
-        <div className="border-r-3">
+        <div className="border-r-3 pr-4 border-gray-500">
           <p className="text-2xl ">20+</p>
           <p className="text-xl font-bold">Projects Completed</p>
         </div>
 
-        <div className="border-r-3 ">
+        <div>
           <p className="text-2xl">19+</p>
           <p className="text-xl font-bold">Clients Happy</p>
         </div>
