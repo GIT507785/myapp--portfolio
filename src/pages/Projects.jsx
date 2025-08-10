@@ -113,21 +113,21 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="px-10  mt-10  mb-18 bg-gray-100 py-10  ">
+      <div className="px-5  mt-10  mb-18 bg-gray-100 py-10  ">
         <div> 
-          <h1 className="text-3xl   py-2 md:text-5xl lg:text-6xl
+          <h1 className="text-4xl   py-2 md:text-5xl lg:text-6xl
            text-blue-800 font-serif mb-10   font-semibold justify-center flex">
             {" "}
             Experiance
           </h1>
           <div className="flex">
             <img src={google} alt="" className="w-8 h-8 mt-4 mr-4" />
-            <h1 className="text-xl    py-2 md:text-4xl font-semibold">
+            <h1 className="text-xl    py-2 md:text-4xl ">
               {" "}
               Lead Software Engineer at Google{" "}
             </h1>
           </div>
-          <p>
+          <p className="mt-2 text-gray-500" >
             As a Lead Software Engineer at Google, I specialize in building scalable, high-performance systems that power products used by billions. With a deep focus on architecture, cross-functional collaboration, and engineering excellence, I lead teams that transform complex challenges into elegant, efficient solutions.
 
 My work spans backend infrastructure, distributed systems, and AI-driven platforms — always with a focus on innovation, reliability, and user impact. At Google, I mentor engineers, shape product direction, and contribute to the technical vision that drives the next generation of technology.
@@ -138,12 +138,12 @@ My work spans backend infrastructure, distributed systems, and AI-driven platfor
         <div className="mt-8">
           <div className="flex">
             <img src={apple_icon} alt="" className="w-8 h-8  mt-4 mr-4" />
-            <h1 className="text-xl py-2 md:text-4xl font-semibold">
+            <h1 className="text-xl py-2  md:text-4xl ">
               {" "}
               Junior Software Engineer at Apple{" "}
             </h1>
           </div>
-          <p>
+          <p className="mt-2 text-gray-500">
             {" "}
             As a Junior Software Engineer at Apple, I’m passionate about crafting intuitive, high-quality software experiences that reflect Apple’s commitment to innovation and user-centric design. Working alongside some of the industry’s best engineers, I contribute to projects that touch millions of users around the world. <br /> 
 
@@ -156,12 +156,12 @@ Driven by curiosity and a love for elegant design, I’m excited to grow within 
         <div className="mt-5">
           <div className="flex">
             <img src={meta} alt="" className="w-7 h-8  mt-4 mr-4" />
-            <h1 className="text-xl md:text-4xl py-2 font-semibold">
+            <h1 className="md:text-4xl  py-2  text-xl">
               {" "}
               Software Engineer at Meta
             </h1>
           </div>
-          <p>
+          <p className="mt-2 text-gray-500">
             As an AI Engineer at Meta, I work at the forefront of intelligent systems, building the technologies that power next-generation experiences across Meta’s platforms. From recommendation engines to natural language processing and computer vision, I design and deploy AI models that scale across billions of users.
 <br />
 My role blends research and engineering — translating cutting-edge machine learning into real-world impact. I collaborate with cross-functional teams to build data-driven products that are personalized, efficient, and ethical by design.
