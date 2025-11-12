@@ -9,10 +9,10 @@ export default function HeroSection() {
 
   useEffect(()=> {
 Aos.init({duration: 1000})
-  }, [] )
+  }, [] ) 
   return (
     <section  
-      className="bg-gradient-to-r from-black to-pink-900  text-white py-20 mt-[60px]  px-6 md:px-16">
+      className="bg-black   text-white py-20 mt-[60px]  px-6 md:px-16">
       <div data-aos = 'fade-down'    className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
         {/* Text Content */}
         <div className="md:w-1/2">
@@ -43,11 +43,11 @@ Aos.init({duration: 1000})
         </div>
 
         {/* Image or Illustration */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2  flex justify-center">
           <img
             src={myimage}
             alt="Developer"
-            className="rounded-full w-72 h-72 object-cover border-green-500 border-8  shadow-xl"
+            className="rounded-full w-72 h-72 object-cover border-pink-800  border-8  shadow-xl"
           />
         </div>
       </div>

@@ -26,13 +26,13 @@ const [menu , setMenu] = useState(link.name)
     return (
         <div > 
             {/* <p className="w-10 h-[500px]"></p> */}
-            <nav className={`fixed top-0 left-0 bg-indigo-500 w-full flex items-center justify-between 
-                px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 
+            <nav className={`fixed top-0 left-0 bg-black/100  w-full flex items-center justify-between 
+                px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 border-b border-gray-700 
                 ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
 
                 {/* Logo */}
                 <a href="/"  className="flex items-center gap-2">
-                    <img src={logo} 
+                    <img src={logo} width={132} height={120}
                          />
                 </a>
 
@@ -96,9 +96,7 @@ const [menu , setMenu] = useState(link.name)
                         whatsapp 
                     </a>  
 
-                    {/* <button className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
-                        Login
-                    </button>   */}
+                    
                  </div>
             </nav>
         </div>

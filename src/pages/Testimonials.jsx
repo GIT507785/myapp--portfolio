@@ -307,7 +307,7 @@ const Testimonials = () => {
 
       </div>
 
-      <div className="flex justify-between  mb-20  px-4 flex  text-white flex-col md:flex-row 
+        <div className="flex justify-between  mb-20  px-4 flex  text-white flex-col md:flex-row 
         py-4 md:px-7    sm:px-2 bg-gradient-to-r   from-slate-900  to-sky-800 ">
         <div className="  md:border-r-3 mt-5  pr-4 border-gray-500 ">
           <p className="text-2xl">4+</p>

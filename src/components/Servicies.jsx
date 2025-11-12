@@ -1,7 +1,11 @@
-// import { Code, Monitor, Smartphone } from "lucide-react"; // Optional: Using lucide-react icons
+import { Code, Monitor, Smartphone } from "lucide-react";
 import React, { useEffect } from "react";
 import Aos from "aos";
 import 'aos/dist/aos.css' 
+import img from '../assets/service1.svg'
+import img2 from '../assets/mobile.svg'
+import img3 from '../assets/service3.svg'
+
 
 
 export default function Services() {
@@ -16,38 +20,49 @@ export default function Services() {
           I offer a range of services to help you build, launch, and grow your digital presence.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 gap-8">
           {/* Service 1 */}
-          <div className=" bg-gradient-to-r from-pink-400 to-blue-700  p-8 rounded-2xl shadow hover:shadow-md transition">
-            <div className="text-blue-600 mb-4">
-              {/* <Monitor size={40} /> */}
+          <div className=" p-8 rounded-2xl shadow-2xl shadow-gray-400  hover:shadow-md transition">
+          
+            <div className="flex mb-4 gap-4">
+              <img src={img} alt="" className="w-15 h-15" />
+            <h3 className="text-xl font-semibold mt-4">Web Development</h3>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Web Development</h3>
+            <div>
+
             <p className="text-gray-700">
               Building fast, responsive, and modern websites using React, Tailwind CSS, and more.
             </p>
+            </div>
           </div>
 
           {/* Service 2 */}
-          <div className=" bg-gradient-to-r from-pink-400 to-blue-700  p-8 rounded-2xl shadow hover:shadow-md transition">
-            <div className="text-blue-600 mb-4">
-              {/* <Smartphone size={40} /> */}
+          <div className="  p-8 rounded-2xl shadow-2xl shadow-gray-400  hover:shadow-md transition">
+           <div className="flex mb-4 gap-4">
+              <img src={img2} alt="" className="w-15 h-15" />
+            <h3 className="text-xl font-semibold mt-4">Mobile-Friendly Design</h3>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Mobile-Friendly Design</h3>
+
+            <div>
             <p className="text-gray-700">
               Creating responsive layouts that look great on any device or screen size.
             </p>
+            </div>
           </div>
 
           {/* Service 3 */}
-          <div className="bg-gradient-to-r from-pink-400 to-blue-700  p-8 rounded-2xl shadow hover:shadow-md transition">
-            <div className="text-blue-600 mb-4">
-              {/* <Code size={40} /> */}
+          <div className=" p-8 rounded-2xl shadow-2xl shadow-gray-400  hover:shadow-md transition">
+            <div className="flex mb-4 gap-4">
+              <img src={img3} alt="" className="w-20 h-20" />
+            <h3 className="text-xl font-semibold mt-4">Custom Solutions</h3>
             </div>
-            <h3 className="text-xl font-semibold mb-2">Custom Solutions</h3>
+
+            <div>
+
             <p className="text-gray-700">
               Tailored web apps and tools that meet specific business or personal needs.
             </p>
+            </div>
           </div>
         </div>
       </div> 

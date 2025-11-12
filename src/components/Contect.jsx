@@ -1,31 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 
 export default function ContactSection() {
-  
-const [result, setResult] = React.useState("");
 
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
+  const [name , setName] = useState()
+  const [email , setEmail] = useState()
+  const [message , setMessage] = useState()
 
-    formData.append("access_key", "45488346-5245-4026-b121-8f206c005167");
+    const  handleSubmit =  async (e) =>{
 
-    const response = await fetch("https://api.web3forms.com/submit ", {
-      method: "POST",
-      body: formData
-    });
+      e.preventDefault();
 
-    const data = await response.json();
+      const dataToSend = {
+        name,
+        email,
+        message
+      }
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
+      try{
+        const response = await axios.post('http://localhost:8800' , dataToSend)
+       alert(response.data)
+      }catch(error) {
+        console.error(error);
+      }
+
+              
+      
     }
-  };
 
   return (
     <section className="bg-gray-100 text-gray-800 py-20 px-6 md:px-16">
@@ -35,10 +36,11 @@ const [result, setResult] = React.useState("");
         {/* Left: Contact Form */}
         <div className="bg-white p-8 rounded-2xl shadow-md w-full">
           <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-          <form onSubmit={onSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
               <input
+               onChange={(e)=>setName(e.target.value)}
                 type="text"
                 id="name"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -48,6 +50,7 @@ const [result, setResult] = React.useState("");
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
               <input
+              onChange={(e)=>setEmail(e.target.value)}
                 type="email"
                 id="email"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -57,6 +60,7 @@ const [result, setResult] = React.useState("");
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
               <textarea
+              onChange={(e)=>setMessage(e.target.message)}
                 id="message"
                 rows="5"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -71,7 +75,6 @@ const [result, setResult] = React.useState("");
               Send Message
             </button>
           </form> 
-          <span>{result}</span>
         </div>
 
         {/* Right: Info / Message */}
