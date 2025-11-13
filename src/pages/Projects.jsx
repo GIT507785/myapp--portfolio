@@ -124,8 +124,8 @@ const Projects = () => {
         </div> 
       </div> */}
 
-      <div className="px-5 sm:px-30  mt-10  mb-18  py-10  ">
-        <div>
+      <div className="px-5 sm:px-30  sm:mt-10  mb-18  py-10  ">
+        <div className="px-3">
            <div className="flex items-center justify-center">
           <h1 className="text-4xl flex  py-2 md:text-5xl lg:text-6xl
             font-serif mb-10   font-semibold justify-center ">
@@ -152,7 +152,7 @@ const Projects = () => {
        
        <hr className="text-gray-300 h-2 w-sm  sm:w-xl  mt-4 "/>
 
-        <div className="mt-8">
+        <div className="mt-8 px-3">
           <div className="flex">
             <h1 className="text-xl py-2  md:text-4xl ">
               ⚙️ Core Skills
@@ -169,7 +169,7 @@ const Projects = () => {
        <hr className="text-gray-300 h-2 w-sm  sm:w-xl mt-4 "/>
 
 
-        <div className="mt-5">
+        <div className="mt-5 px-3">
           <div className="flex">
             <h1 className="md:text-4xl mt-3  py-2  text-xl">
               🚀 Key Responsibilities & Achievements

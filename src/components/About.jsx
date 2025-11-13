@@ -33,7 +33,8 @@ export default function AboutMe()  {
     <section className="bg-gray-100 text-gray-900 py-20 px-6 md:px-16">
       <div data-aos = 'fade-up' className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12 items-center">
         {/* Profile Image */}
-        <div className="w-40 h-40 border-7 border-red-500  md:w-60 md:h-60 rounded-full overflow-hidden shadow-lg">
+        <div className="w-50 h-50 border-7 -mt-2  sm:-mt-135 border-red-500  md:w-60 md:h-60 
+        rounded-full overflow-hidden shadow-lg ">
           <img
             src={myImage}
             alt="Your Name"
@@ -43,8 +44,8 @@ export default function AboutMe()  {
 
         {/* Text Content */}
         <div className="md:w-2/3">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-          <p className="text-lg mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold  -mt-10 mb-4 ">About Me</h2>
+          <p className="text-lg mb-6 mt-5">
             Hello! I’m <span className="font-semibold text-blue-600">HASEEB</span>, a passionate Web Developer focused on building modern and responsive websites using technologies like React, Tailwind CSS, and Next.js. I love clean design, scalable code, and solving real-world problems.
           </p>
 
