@@ -106,7 +106,7 @@ const Projects = () => {
         </div>
       </section>
 
-      <div
+      {/* <div
         data-aos="fade-up"
         className="mt-10   bg-gray-100  justify-center items-center"
       >
@@ -121,64 +121,67 @@ const Projects = () => {
           <img src={img4} alt="" className="w-[300px] h-[200px]" />
           <img src={img5} alt="" className="w-[300px] h-[200px]" />
           <img src={img6} alt="" className="w-[300px] h-[200px] mb-5 " />
-        </div>
-      </div>
+        </div> 
+      </div> */}
 
-      <div className="px-5  mt-10  mb-18 bg-gray-100 py-10  ">
-        <div> 
-          <h1 className="text-4xl   py-2 md:text-5xl lg:text-6xl
-           text-blue-800 font-serif mb-10   font-semibold justify-center flex">
-            {" "}
-            Experiance
+      <div className="px-5 sm:px-30  mt-10  mb-18  py-10  ">
+        <div>
+           <div className="flex items-center justify-center">
+          <h1 className="text-4xl flex  py-2 md:text-5xl lg:text-6xl
+            font-serif mb-10   font-semibold justify-center ">
+            Experience  
           </h1>
+                  <hr className="h-10 w-20 mt-1 font-extrabold text-gray-500 "/> 
+              </div>
           <div className="flex">
-            <img src={google} alt="" className="w-8 h-8 mt-4 mr-4" />
             <h1 className="text-xl    py-2 md:text-4xl ">
-              {" "}
-              Lead Software Engineer at Google{" "}
+              🧠 Professional Summary
             </h1>
           </div>
-          <p className="mt-2 text-gray-500" >
-            As a Lead Software Engineer at Google, I specialize in building scalable, high-performance systems that power products used by billions. With a deep focus on architecture, cross-functional collaboration, and engineering excellence, I lead teams that transform complex challenges into elegant, efficient solutions.
-
-My work spans backend infrastructure, distributed systems, and AI-driven platforms — always with a focus on innovation, reliability, and user impact. At Google, I mentor engineers, shape product direction, and contribute to the technical vision that drives the next generation of technology.
-          </p>
+          <li className="mt-2  text-gray-500" > 
+            Passionate and results-driven Full Stack Developer with 2 years of experience <br /> in  designing and building modern, responsive, and scalable web applications.
+          </li>
+          <li className="mt-2  text-gray-500" >
+            Proficient in both frontend and backend development using React.js, <br /> Tailwind CSS, Node.js, Express, and MongoDB.
+          </li>
+          <li className="mt-2  text-gray-500" >
+            Focused on writing clean, efficient code and creating intuitive user <br /> experiences while delivering high-quality software solutions on time.
+          </li>
         </div>
         {/*  */}
+       
+       <hr className="text-gray-300 h-2 w-sm  sm:w-xl  mt-4 "/>
 
         <div className="mt-8">
           <div className="flex">
-            <img src={apple_icon} alt="" className="w-8 h-8  mt-4 mr-4" />
             <h1 className="text-xl py-2  md:text-4xl ">
-              {" "}
-              Junior Software Engineer at Apple{" "}
+              ⚙️ Core Skills
             </h1>
           </div>
-          <p className="mt-2 text-gray-500">
-            {" "}
-            As a Junior Software Engineer at Apple, I’m passionate about crafting intuitive, high-quality software experiences that reflect Apple’s commitment to innovation and user-centric design. Working alongside some of the industry’s best engineers, I contribute to projects that touch millions of users around the world. <br /> 
-
-My focus areas include clean code practices, feature development, and cross-platform integration — always guided by performance, security, and seamless user experience. I take pride in learning quickly, adapting to new technologies, and contributing meaningfully to team goals.
-<br />
-Driven by curiosity and a love for elegant design, I’m excited to grow within a culture that values precision, creativity, and pushing the boundaries of what’s possible through code.
-          </p>
+          <div className="mt-2  mb-4  text-gray-500 ">
+            <li className="mt-1"> Frontend: React.js, Tailwind CSS, JavaScript (ES6+), HTML5, CSS3 </li>
+            <li className="mt-1">Backend: Node.js, Express.js, RESTful APIs  </li>
+            <li className="mt-1"> Database: MongoDB, Mongoose </li>
+            <li className="mt-1"> Tools & Platforms: Git, GitHub, Vercel, Render, Postman </li>
+             <li className="mt-1"> Other: JWT Authentication, Responsive Design, Debugging, Performance Optimization </li>
+          </div>
         </div>
+       <hr className="text-gray-300 h-2 w-sm  sm:w-xl mt-4 "/>
+
 
         <div className="mt-5">
           <div className="flex">
-            <img src={meta} alt="" className="w-7 h-8  mt-4 mr-4" />
-            <h1 className="md:text-4xl  py-2  text-xl">
-              {" "}
-              Software Engineer at Meta
+            <h1 className="md:text-4xl mt-3  py-2  text-xl">
+              🚀 Key Responsibilities & Achievements
             </h1>
           </div>
-          <p className="mt-2 text-gray-500">
-            As an AI Engineer at Meta, I work at the forefront of intelligent systems, building the technologies that power next-generation experiences across Meta’s platforms. From recommendation engines to natural language processing and computer vision, I design and deploy AI models that scale across billions of users.
-<br />
-My role blends research and engineering — translating cutting-edge machine learning into real-world impact. I collaborate with cross-functional teams to build data-driven products that are personalized, efficient, and ethical by design.
-<br /> 
-With a passion for solving complex problems through intelligent automation, I’m focused on advancing AI that enhances connection, creativity, and human potential — all while pushing the boundaries of what’s possible in the metaverse and beyond.
-          </p>
+          <div className="mt-5 text-gray-500">
+           <li className="mt-1  "> Developed and deployed multiple full-stack web applications, including a Blogging Platform and Task Manager. </li>
+           <li className="mt-1"> Designed and implemented RESTful APIs for smooth data flow between frontend and backend. </li>
+           <li className="mt-1"> Integrated secure authentication and authorization using JWT and middleware validation. </li>
+           <li className="mt-1"> Built modern, responsive UIs with React and Tailwind CSS to enhance user engagement. </li>
+            <li className="mt-1"> Collaborated with teams and clients to deliver scalable, high-performance, and maintainable solutions </li>
+          </div>
         </div>
       </div>
     </div>
