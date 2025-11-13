@@ -1,32 +1,30 @@
 import React, { useState } from "react";
-import axios from "axios";
+import toast from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
 
 export default function ContactSection() {
 
-  const [name , setName] = useState()
-  const [email , setEmail] = useState()
-  const [message , setMessage] = useState()
+   const [result, setResult] = useState("");
 
-    const  handleSubmit =  async (e) =>{
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "262718e2-52ef-4d18-ae13-91ed6de1e69c");
 
-      e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
 
-      const dataToSend = {
-        name,
-        email,
-        message
-      }
-
-      try{
-        const response = await axios.post('http://localhost:8800' , dataToSend)
-       alert(response.data)
-      }catch(error) {
-        console.error(error);
-      }
-
-              
-      
+    const data = await response.json();
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      setResult("Error");
     }
+  };
 
   return (
     <section className="bg-gray-100 text-gray-800 py-20 px-6 md:px-16">
@@ -36,13 +34,14 @@ export default function ContactSection() {
         {/* Left: Contact Form */}
         <div className="bg-white p-8 rounded-2xl shadow-md w-full">
           <h2 className="text-3xl font-bold mb-6">Contact Me</h2>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={onSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-1">Name</label>
               <input
-               onChange={(e)=>setName(e.target.value)}
+               
                 type="text"
                 id="name"
+                name="name"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Your name"
               />
@@ -50,9 +49,9 @@ export default function ContactSection() {
             <div>
               <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
               <input
-              onChange={(e)=>setEmail(e.target.value)}
                 type="email"
                 id="email"
+                name="email"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="you@example.com"
               />
@@ -60,9 +59,9 @@ export default function ContactSection() {
             <div>
               <label htmlFor="message" className="block text-sm font-medium mb-1">Message</label>
               <textarea
-              onChange={(e)=>setMessage(e.target.message)}
                 id="message"
                 rows="5"
+                name="message"
                 className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 placeholder="Write your message here..."
               ></textarea>
@@ -74,6 +73,7 @@ export default function ContactSection() {
             >
               Send Message
             </button>
+            <span>{result}</span>
           </form> 
         </div>
 

@@ -10,8 +10,15 @@ import apple_icon from "../assets/apple-logo.png";
 import meta from "../assets/meta.png";
 import google from "../assets/google.png";
 
+import thumImg  from '../assets/thubmnail_blog.jpg'
+import thumImg2  from '../assets/thumbnail_resume.jpg'
+import thumImg3  from '../assets/thumbnail_resume.jpg'
+
+
+
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { div } from "framer-motion/client";
 
 const Projects = () => {
   useEffect(() => {
@@ -20,76 +27,80 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Portfolio Website",
+      image: thumImg,
+      title: "Bloging Website",
       description:
-        "A personal portfolio to showcase my skills and projects using React and Tailwind CSS.",
-      tech: ["React", "Tailwind", "Vite"],
-      demoLink: "https://your-portfolio.com",
-      codeLink: "https://github.com/yourname/portfolio",
+        "I is fully responsive blogging website using modern web technologies. The platform allows users to create, edit, and share blog posts seamlessly. It features a clean user interface, dynamic content rendering, and a functional backend for managing blogs, comments, and user authentication..",
+      tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
+      demoLink: "https://blog-app-eight-ashy-81.vercel.app",
     },
     {
-      title: "Task Manager App",
-      description:
-        "A full-featured task management app with drag-and-drop, dark mode, and more.",
-      tech: ["React", "Redux", "Firebase"],
-      demoLink: "https://your-task-app.com",
-      codeLink: "https://github.com/yourname/task-manager",
+      image: thumImg2,
+      title: "Resume Builder with AI features",
+      description: " Designed and developed a dynamic blogging website featuring post creation, editing, and comment functionality.Integrated secure user authentication and content management using Node.js and MongoD Utilized React and Tailwind CSS for an interactive, fully responsive frontend experience.",
+
+      tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],      
+      demoLink: "https://resume-builder-gules-three.vercel.app",
     },
     {
-      title: "Blog Platform",
+      image: thumImg2,
+      title: "Task Manager",
       description:
-        "A Markdown blog system with user authentication and real-time comments.",
-      tech: ["Next.js", "Tailwind", "MongoDB"],
+        "Built a full-stack task management system that enables users to create, update, and categorize tasks with deadlines and status tracking.Implemented authentication, real-time updates, and a responsive UI using React, Tailwind CSS, Node.js, and MongoDB.",
+      tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
       demoLink: "https://your-blog.com",
-      codeLink: "https://github.com/yourname/blog-platform",
     },
   ];
 
   return (
     <div className="mt-14">
-      <section className="bg-gray-900 text-white py-20 pb-32 px-6 md:px-16">
-        <div data-aos="fade-up-left" className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <section className="bg-slate-50  py-20 pb-32 px-6 md:px-16">
+        <div data-aos="fade-down" className="max-w-6xl mx-auto transition-all duration-500 ">
+          <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12">
             My Projects
           </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="flex gap-10  flex-col items-center justify-center px-3">
             {projects.map((project, index) => (
+              <div>
               <div
                 key={index}
-                className="bg-gray-800 rounded-2xl p-6 shadow hover:shadow-xl transition"
+                className="bg-gray-200  flex gap-y-10 h-225  md:max-h-80 w-100 md:w-250  
+                 rounded-2xl p-6 shadow-md  hover:shadow-xl transition"
               >
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                <p className="text-gray-300 mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 text-sm text-blue-400 mb-4">
-                  {project.tech.map((techItem, i) => (
-                    <span
-                      key={i}
-                      className="bg-blue-800 px-2 py-1 rounded-full"
-                    >
+               <div className="flex gap-5 flex-col  md:flex-row">
+                
+                <div>
+                  <img src={project.image} className="rounded-xl w-80  md:w-120  h-full  " alt="" />
+                </div>
+
+                <div>
+                       <h1 className="mt-3  font-extrabold text-2xl">{project.title}</h1>
+                        
+                        <p className="w-xs    md:w-xl mt-2 text-gray-500"> {project.description}</p>
+                             
+                             <div className="cursor-pointer grid grid-cols-2 md:grid-cols-4">
+                         {project.tech.map((techItem, i) => (
+                           <span
+                           key={i}
+                           className="bg-blue-800 text-white  flex items-center justify-center mt-4 ml-2  md:ml-2 px-2   py-1  rounded-full"
+                           >
                       {techItem}
                     </span>
-                  ))}
-                </div>
-                <div className="flex gap-4">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Live Demo
+                  ))} 
+                  </div>
+                    
+                    <div className="mt-7 md:mt-3">
+                  <a href={project.demoLink} className="bg-slate-900 hover:bg-slate-600 text-white   px-4 py-1 rounded-full "> 
+                    Live Preview
                   </a>
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-300 hover:underline"
-                  >
-                    Source Code
-                  </a>
+                    </div>
+                         
                 </div>
+                </div>  
+                                   
               </div>
+                </div>
             ))}
           </div>
         </div>
@@ -103,7 +114,7 @@ const Projects = () => {
           {" "}
           My latest work
         </h1>
-        <div className="mt-5 flex  flex-col md:grid grid-cols-2 md:px-32  gap-8  mt-15">
+        <div className=" flex  flex-col md:grid grid-cols-2 md:px-32  gap-8  mt-15">
           <img src={img1} alt="" className="w-[300px] " />
           <img src={img2} alt="" className="w-[300px]" />
           <img src={img3} alt="" className="w-[300px]" />

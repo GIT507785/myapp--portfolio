@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Testimonials from "./pages/Testimonials";
 import ContactUs from "./pages/ContactUs";
 import ScrollToTop from "./components/ScrollToTop";
+  import { ToastContainer, toast } from 'react-toastify'
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
 
   return (
 <div>   
+  <ToastContainer/>
   <ScrollToTop/> 
 <Navbar/>     
       <Routes>

@@ -59,9 +59,9 @@ export default function AboutMe()  {
              {/* skills */}
                    <p className="bg-gray-400 mt-10 text-gray-200 rounded-2xl w-20 items-center justify-center   flex  py-1">Skills</p>
                    <p className="text-gray-500 mt-1">The skills , tools and technologies I am really good at.</p>
-              <div className="mt-2 grid grid-cols-2 sm:grid-cols-5 ">
+              <div className="mt-2 px-4 gap-3  grid grid-cols-3  sm:grid-cols-5 ">
                <div>
-                <img src={img1} alt="" className="mt-3 w-20 h-20"/>
+                <img src={img1} alt="" className="mt-5 w-20 h-20"/>
                 <h1 className="text-gray-700 mt-1 ml-2">HTML</h1>
                </div>
                <div>
