@@ -3,15 +3,15 @@ import React from "react";
 
 const Testimonials = () => {
   return (
-    <div>
-      <h1 className="mt-[130px] flex justify-center text-3xl font-bold  md:text-5xl lg:text-6xl  
+    <div className="dark:text-white dark:bg-black ">
+      <h1 className="pt-[130px]   flex justify-center text-4xl font-bold  md:text-5xl lg:text-6xl  
       bg-gradient-to-r   from-green-400  to-sky-500 text-transparent bg-clip-text   ">
         {" "}
         Testimonials
       </h1>
       <div className="mt-[50px] ">
         <div class="flex flex-wrap items-center  pb-[50px]   justify-center gap-6 pt-14">
-          <div class="text-sm w-80 border border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+          <div class="text-sm w-80 border dark:border-teal-400 border-gray-500/30 pb-6 rounded-lg dark:bg-black bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -19,13 +19,13 @@ const Testimonials = () => {
                 alt="userImage1"
               />
               <div class="pt-8  text-center">
-                <h1 class="text-lg font-medium text-gray-800">
+                <h1 class="text-lg font-medium text-gray-800 dark:text-teal-400">
                   Donald Jackman
                 </h1>
-                <p class="text-gray-800/80">Content Creator</p>
+                <p class="text-gray-800/80 dark:text-teal-400">Content Creator</p>
               </div>
             </div>
-            <p class="text-gray-500  px-6 text-center">
+            <p class="text-gray-500  px-6 text-center  dark:text-white">
               I've been using imagify for nearly two years, primarily for
               Instagram, and it has been incredibly user-friendly, making my
               work much easier.
@@ -97,7 +97,7 @@ const Testimonials = () => {
           </div>
 
         <br /> 
-           <div class="text-sm w-80 border border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+           <div class="text-sm w-80 border dark:border-teal-400 dark:bg-black  border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -105,13 +105,13 @@ const Testimonials = () => {
                 alt="userImage2"
               />
               <div class="pt-8 text-center">
-                <h1 class="text-lg font-medium text-gray-800">
+                <h1 class="text-lg font-medium text-gray-800 dark:text-teal-400">
                   Richard Nelson
                 </h1>
-                <p class="text-gray-800/80">Instagram Influencer</p>
+                <p class="text-gray-800/80 dark:text-teal-400">Instagram Influencer</p>
               </div>
             </div>
-            <p class="text-gray-500 px-6 text-center">
+            <p class="text-gray-500 px-6 text-center dark:text-white">
               I've been using imagify for nearly two years, primarily for
               Instagram, and it has been incredibly user-friendly, making my
               work much easier.
@@ -182,7 +182,7 @@ const Testimonials = () => {
             </div>
           </div>
 <br /> 
-          <div class="text-sm w-80 border border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+          <div  class="text-sm w-80 border dark:border-teal-400 dark:bg-black border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -190,13 +190,13 @@ const Testimonials = () => {
                 alt="userImage3"
               />
               <div class="pt-8 text-center">
-                <h1 class="text-lg font-medium text-gray-800">
+                <h1 class="text-lg font-medium dark:text-teal-400 text-gray-800">
                   James Washington
                 </h1>
-                <p class="text-gray-800/80">Marketing Manager</p>
+                <p class="text-gray-800/80 dark:text-teal-400">Marketing Manager</p>
               </div>
             </div>
-            <p class="text-gray-500 px-6 text-center">
+            <p class="text-gray-500 px-6 text-center dark:text-white">
               I've been using imagify for nearly two years, primarily for
               Instagram, and it has been incredibly user-friendly, making my
               work much easier.
@@ -270,12 +270,12 @@ const Testimonials = () => {
 
  <div className="flex flex-col  md:px-10 sm:px-4   py-10">
  <h1 className="text-2xl   md:text-5xl    font-bold mt-3  text-purple-900  
- font-serif   flex justify-center mb-10   " > Create Your Perfect Brand</h1>
+ font-serif   flex justify-center mb-10   dark:text-teal-400" > Create Your Perfect Brand</h1>
 <div className="mt-5 px-5"
 >
-    <h1 className="text-4xl md:text-4xl font-bold mt-3  text-slate-500  ">  Instant brand creation</h1>
-    <p className="text-base text-gray-800 mt-4" > 
-         <span className="font-bold text-black text-xl text-blue-800 ">*</span>   
+    <h1 className="text-4xl md:text-4xl font-bold mt-3 dark:text-teal-400 text-slate-500  ">  Instant brand creation</h1>
+    <p className="text-base text-gray-800 dark:text-white mt-4" > 
+         <span className="font-bold  text-xl text-blue-800 dark:text-teal-400">*</span>   
          In today's fast-paced digital world, speed is everything — and so is identity. Instant brand creation empowers entrepreneurs, startups, and creators to go from idea to brand in record time. Whether it's launching a product, a personal brand, or a new service, this approach uses smart tools, AI-driven design, and strategic clarity to build a professional, cohesive brand in hours — not weeks.
 
          <br /> 
@@ -287,18 +287,18 @@ const Testimonials = () => {
  
  {/* */}
 <div className="mt-5 px-5 " >
-    <h1 className="text-4xl md:text-4xl font-bold  text-slate-600  mt-4 " > Effortless Consistency  </h1>
-    <p className="text-base text-gray-800 mt-5" >  
-         <span className="font-bold text-blue-800  text-blactext-xl">*</span>  Consistency is the cornerstone of trust. But maintaining it across every touchpoint — from social posts to packaging — can be overwhelming. That’s where effortless consistency comes in.
+    <h1 className="text-4xl md:text-4xl font-bold  text-slate-600 dark:text-teal-400  mt-4 " > Effortless Consistency  </h1>
+    <p className="text-base text-gray-800 mt-5 dark:text-white " >  
+         <span className="font-bold text-blue-800  text-blactext-xl dark:text-teal-400">*</span>  Consistency is the cornerstone of trust. But maintaining it across every touchpoint — from social posts to packaging — can be overwhelming. That’s where effortless consistency comes in.
 
          With the right tools and systems in place, your brand can deliver a unified message, voice, and visual identity everywhere it appears — without constant oversight. From auto-applied brand templates to content guidelines and smart automation, effortless consistency removes the friction of brand management and replaces it with fluid, scalable execution.
         </p>
 </div> 
 {/*  */}
-<div className="mt-5 px-5" >
-    <h1 className="text-4xl md:text-4xl font-bold mt-4  text-slate-600 " >  AI-Powered Precision </h1>
-    <p className="text-base text-gray-800 mt-5" >  
-         <span className="font-bold text-blactext-xl text-blue-800 ">*</span>  In an age where data drives everything, AI-powered precision is redefining how brands operate, create, and grow. By harnessing advanced algorithms and real-time insights, AI delivers unmatched accuracy — whether you're targeting the right audience, optimizing content, or refining design elements. 
+<div className="mt-5 px-5 " >
+    <h1 className="text-4xl md:text-4xl font-bold mt-4 dark:text-teal-400  text-slate-600 " >  AI-Powered Precision </h1>
+    <p className="text-base dark:text-white text-gray-800 mt-5" >  
+         <span className="font-bold text-blactext-xl text-blue-800 dark:text-teal-400">*</span>  In an age where data drives everything, AI-powered precision is redefining how brands operate, create, and grow. By harnessing advanced algorithms and real-time insights, AI delivers unmatched accuracy — whether you're targeting the right audience, optimizing content, or refining design elements. 
 
          This isn’t guesswork — it’s strategy backed by intelligent systems that learn, adapt, and improve. From personalized customer experiences to predictive analytics and design automation, AI turns complex decisions into confident actions.
         </p>
@@ -307,7 +307,7 @@ const Testimonials = () => {
 
       </div>
 
-        <div className="flex justify-between  mb-20  px-4 flex  text-white flex-col md:flex-row 
+        <div className="flex justify-between  mb-20  px-4  text-white flex-col md:flex-row 
         py-4 md:px-7    sm:px-2 bg-gradient-to-r   from-slate-900  to-sky-800 ">
         <div className="  md:border-r-3 mt-5  pr-4 border-gray-500 ">
           <p className="text-2xl">4+</p>
