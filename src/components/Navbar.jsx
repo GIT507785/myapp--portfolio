@@ -33,7 +33,7 @@ const [menu , setMenu] = useState(link.name)
             <nav className={`fixed top-0 left-0 dark:bg-black/100  w-full flex items-center
              justify-between  bg-slate-950 
                 px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 border-b border-gray-700 
-                ${isScrolled ? "bg-white/80 shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
+                ${isScrolled ? "bg-white/80  shadow-md text-gray-700 backdrop-blur-lg py-3 md:py-4" : "py-4 md:py-6"}`}>
 
                 {/* Logo */}
                 <a href="/"  className="flex items-center gap-2">
@@ -42,20 +42,21 @@ const [menu , setMenu] = useState(link.name)
                 </a>
 
                 {/* Desktop Nav */}
-                <div className="hidden md:flex items-center gap-4 lg:gap-8">
+                <div className="hidden md:flex items-center  gap-4 lg:gap-8">
                     {navLinks.map((link, i) => (
                         <Link key={i}  to={link.path}  
                         onClick={()=>setMenu(link.name)} 
 
                         className={`group cursor-pointer flex ${menu===(link.name) ? 'border-b-3   border-red-800 ' : ''}  
-                            flex-col gap-0.5 ${isScrolled ? "text-gray-700"
+                            flex-col gap-0.5 ${isScrolled ? "text-gray-700 dark:text-white"
                          : "text-white"}`}>
                             {link.name}
-                            <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
+                            <div className={`${isScrolled ? "bg-gray-700 dark:text-white" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </Link>
                     ))}
                      <a  href=" https://wa.me/+923423135480"
-                    className={`border px-4 py-1 hover:bg-slate-700  hover:scale-y    duration-1   text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                    className={`border px-4 py-1 hover:bg-slate-700  hover:scale-y  
+                    duration-1   text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black dark:text-white' : 'text-white dark:text-white'} transition-all`}>
                         whatsapp 
                     </a> 
                     <ToggleTheme theme={theme} setTheme={setTheme}/>
@@ -73,9 +74,9 @@ const [menu , setMenu] = useState(link.name)
                 </div>  */} 
 
                 {/* Mobile Menu Button */}
-                <div className="flex text-white items-center gap-3 md:hidden">
+                <div className="flex dark:text-white  text-white items-center gap-3 md:hidden">
                     <ToggleTheme theme={theme} setTheme={setTheme}/>
-                    <svg onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 cursor-pointer ${isScrolled ? "invert" : ""}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <svg onClick={() => setIsMenuOpen(!isMenuOpen)} className={`h-6 w-6 cursor-pointer ${isScrolled ? "text-white" : ""}`} fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <line x1="4" y1="6" x2="20" y2="6" />
                         <line x1="4" y1="12" x2="20" y2="12" />
                         <line x1="4" y1="18" x2="20" y2="18" />
