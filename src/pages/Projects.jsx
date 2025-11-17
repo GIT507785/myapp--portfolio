@@ -12,7 +12,7 @@ import google from "../assets/google.png";
 
 import thumImg  from '../assets/thubmnail_blog.jpg'
 import thumImg2  from '../assets/thumbnail_resume.jpg'
-import thumImg3  from '../assets/thumbnail_resume.jpg'
+import thumImg3  from '../assets/hotel.png'
 
 
 
@@ -30,25 +30,25 @@ const Projects = () => {
       image: thumImg,
       title: "Bloging Website",
       description:
-        "I is fully responsive blogging website using modern web technologies. The platform allows users to create, edit, and share blog posts seamlessly. It features a clean user interface, dynamic content rendering, and a functional backend for managing blogs, comments, and user authentication..",
+        "It is fully responsive blogging website using modern web technologies. The platform allows users to create, edit, and share blog posts seamlessly. It features a clean user interface, dynamic content rendering, and a functional backend for managing blogs, comments, and user authentication..",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
       demoLink: "https://blog-app-eight-ashy-81.vercel.app",
     },
     {
       image: thumImg2,
       title: "Resume Builder with AI features",
-      description: " Designed and developed a dynamic blogging website featuring post creation, editing, and comment functionality.Integrated secure user authentication and content management using Node.js and MongoD Utilized React and Tailwind CSS for an interactive, fully responsive frontend experience.",
+      description: "Create Professional Resumes in Minutes.Create Smart, Fast & Free Resume Builder for Job Seekers.Design Beautiful, Job-Winning Resumes with Ease.Professional Templates + Smart Editing = Perfect Resume.",
 
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],      
       demoLink: "https://resume-builder-gules-three.vercel.app",
     },
     {
-      image: thumImg2,
-      title: "Task Manager",
+      image: thumImg3,
+      title: "Hotel Booking website",
       description:
-        "Built a full-stack task management system that enables users to create, update, and categorize tasks with deadlines and status tracking.Implemented authentication, real-time updates, and a responsive UI using React, Tailwind CSS, Node.js, and MongoDB.",
+        "It is only for demo.",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
-      demoLink: "https://your-blog.com",
+      demoLink: "https://hotel-booking-haseeb3.vercel.app/",
     },
   ];
 
