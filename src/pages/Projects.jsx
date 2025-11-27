@@ -80,7 +80,7 @@ const Projects = () => {
           <div className=" gap-10 mt-10  sm:px-30  grid grid-cols-1  sm:grid-cols-2 items-center justify-center px-3">
            {projects.map((item, index)=>{
            return(
-            <div className="max-w-100 flex-col  flex border bg-gray-100  border-gray-300 dark:border-blue-400 rounded-2xl ">
+            <div className="max-w-100 flex-col  flex border bg-gray-100  dark:bg-black border-gray-300 dark:border-blue-400 rounded-2xl ">
              <div>
               <img src={item.image} alt="" className="rounded-t-2xl  border-b border-gray-100  h-60 w-full"/>
              </div>
