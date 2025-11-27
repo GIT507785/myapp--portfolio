@@ -67,7 +67,7 @@ const Projects = () => {
       description:
         "It is only for demo.",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
-      demoLink: "https://hotel-booking-haseeb3.vercel.app/",
+      demoLink: "https://mos-control.vercel.app/",
     },  
   ];
 
