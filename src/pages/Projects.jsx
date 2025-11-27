@@ -13,6 +13,8 @@ import google from "../assets/google.png";
 import thumImg  from '../assets/thubmnail_blog.jpg'
 import thumImg2  from '../assets/thumbnail_resume.jpg'
 import thumImg3  from '../assets/hotel.png'
+import thumImg4  from '../assets/mos.jpg'
+
 
 
 import java from '../assets/java.svg'
@@ -57,7 +59,16 @@ const Projects = () => {
         "It is only for demo.",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
       demoLink: "https://hotel-booking-haseeb3.vercel.app/",
-    },
+    }, 
+    {
+      image: thumImg4,
+      title: "Mosquito Controol",
+      icons:[java, react, tailwind],
+      description:
+        "It is only for demo.",
+      tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
+      demoLink: "https://hotel-booking-haseeb3.vercel.app/",
+    },  
   ];
 
   return (
