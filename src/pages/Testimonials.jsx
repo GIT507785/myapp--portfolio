@@ -5,13 +5,13 @@ const Testimonials = () => {
   return (
     <div className="dark:text-white dark:bg-black ">
       <h1 className="pt-[130px]   flex justify-center text-4xl font-bold  md:text-5xl lg:text-6xl  
-      bg-gradient-to-r   from-green-400  to-sky-500 text-transparent bg-clip-text   ">
+      bg-gradient-to-r   from-blue-400  to-sky-800 text-transparent bg-clip-text   ">
         {" "}
         Testimonials
       </h1>
       <div className="mt-[50px] ">
         <div class="flex flex-wrap items-center  pb-[50px]   justify-center gap-6 pt-14">
-          <div class="text-sm w-80 border dark:border-teal-400 border-gray-500/30 pb-6 rounded-lg dark:bg-black bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+          <div class="text-sm w-80 border dark:border-blue-400 border-gray-500/30 pb-6 rounded-lg dark:bg-black bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -19,10 +19,10 @@ const Testimonials = () => {
                 alt="userImage1"
               />
               <div class="pt-8  text-center">
-                <h1 class="text-lg font-medium text-gray-800 dark:text-teal-400">
+                <h1 class="text-lg font-medium text-gray-800 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">
                   Donald Jackman
                 </h1>
-                <p class="text-gray-800/80 dark:text-teal-400">Content Creator</p>
+                <p class="text-gray-800/80 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">Content Creator</p>
               </div>
             </div>
             <p class="text-gray-500  px-6 text-center  dark:text-white">
@@ -97,7 +97,7 @@ const Testimonials = () => {
           </div>
 
           <br />
-          <div class="text-sm w-80 border dark:border-teal-400 dark:bg-black  border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+          <div class="text-sm w-80 border dark:border-blue-400 dark:bg-black  border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -105,10 +105,10 @@ const Testimonials = () => {
                 alt="userImage2"
               />
               <div class="pt-8 text-center">
-                <h1 class="text-lg font-medium text-gray-800 dark:text-teal-400">
+                <h1 class="text-lg font-medium text-gray-800 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">
                   Richard Nelson
                 </h1>
-                <p class="text-gray-800/80 dark:text-teal-400">Instagram Influencer</p>
+                <p class="text-gray-800/80 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">Instagram Influencer</p>
               </div>
             </div>
             <p class="text-gray-500 px-6 text-center dark:text-white">
@@ -182,7 +182,7 @@ const Testimonials = () => {
             </div>
           </div>
           <br />
-          <div class="text-sm w-80 border dark:border-teal-400 dark:bg-black border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
+          <div class="text-sm w-80 border dark:border-blue-400 dark:bg-black border-gray-500/30 pb-6 rounded-lg bg-white shadow-[0px_4px_15px_0px] shadow-black/5">
             <div class="flex flex-col items-center px-5 py-4 relative">
               <img
                 class="h-24 w-24 absolute -top-14 rounded-full"
@@ -190,10 +190,10 @@ const Testimonials = () => {
                 alt="userImage3"
               />
               <div class="pt-8 text-center">
-                <h1 class="text-lg font-medium dark:text-teal-400 text-gray-800">
+                <h1 class="text-lg font-medium  text-gray-800 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500" >
                   James Washington
                 </h1>
-                <p class="text-gray-800/80 dark:text-teal-400">Marketing Manager</p>
+                <p class="text-gray-800/80 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">Marketing Manager</p>
               </div>
             </div>
             <p class="text-gray-500 px-6 text-center dark:text-white">
@@ -270,10 +270,10 @@ const Testimonials = () => {
 
         <div className="flex flex-col  md:px-10 sm:px-4   py-10">
           <h1 className="text-2xl   md:text-5xl    font-bold mt-3  text-purple-900  
- font-serif   flex justify-center mb-10   dark:text-teal-400" > Why Choose Me  </h1>
+ font-serif   flex justify-center mb-10   dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500" > Why Choose Me  </h1>
           <div className="mt-5 px-5"
           >
-            <h1 className="text-4xl md:text-4xl font-bold mt-3 dark:text-teal-400 text-slate-500  ">
+            <h1 className="text-4xl md:text-4xl font-bold mt-3 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500 text-slate-500  ">
               Proven Full-Stack Expertise  </h1>
             <p className="text-base text-gray-800 dark:text-white mt-4" >
               {/* <span className="font-bold  text-xl text-blue-800 dark:text-teal-400"></span>    */}
@@ -299,9 +299,9 @@ const Testimonials = () => {
 
           {/* */}
           <div className="mt-5 px-5 " >
-            <h1 className="text-4xl md:text-4xl font-bold  text-slate-600 dark:text-teal-400  mt-4 " >  Reliable & Fast Problem Solver </h1>
+            <h1 className="text-4xl md:text-4xl font-bold  text-slate-600 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500  mt-4 " >  Reliable & Fast Problem Solver </h1>
             <p className="text-base text-gray-800 mt-5 dark:text-white " >
-              <span className="font-bold text-blue-800  text-blactext-xl dark:text-teal-400"></span> 
+              <span className="font-bold text-blue-800  text-blactext-xl dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500"></span> 
                 
                 <li>Quickly identifies bugs and provides efficient solutions</li>
                 <li>Strong debugging & error-handling skills</li>
@@ -312,9 +312,9 @@ const Testimonials = () => {
           </div>
           {/*  */}
           <div className="mt-5 px-5 " >
-            <h1 className="text-4xl md:text-4xl font-bold mt-4 dark:text-teal-400  text-slate-600 " >Creative & User-Focused Development </h1>
+            <h1 className="text-4xl md:text-4xl font-bold mt-4 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500  text-slate-600 " >Creative & User-Focused Development </h1>
             <p className="text-base dark:text-white text-gray-800 mt-5" >
-              <span className="font-bold text-blactext-xl text-blue-800 dark:text-teal-400"></span> 
+              <span className="font-bold text-blactext-xl text-blue-800 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500"></span> 
                 <li>Modern UI/UX using Tailwind CSS & React</li>
                 <li>Responsive and mobile-friendly designs</li>
                 <li>Focus on performance and smooth user experience</li>

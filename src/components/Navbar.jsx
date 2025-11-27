@@ -47,7 +47,7 @@ const [menu , setMenu] = useState(link.name)
                         <Link key={i}  to={link.path}  
                         onClick={()=>setMenu(link.name)} 
 
-                        className={`group cursor-pointer flex ${menu===(link.name) ? 'border-b-3   border-red-800 ' : ''}  
+                        className={`group cursor-pointer flex ${menu===(link.name) ? 'border-b-3   border-teal-00 ' : ''}  
                             flex-col gap-0.5 ${isScrolled ? "text-gray-700 dark:text-white"
                          : "text-white"}`}>
                             {link.name}

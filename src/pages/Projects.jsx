@@ -15,10 +15,16 @@ import thumImg2  from '../assets/thumbnail_resume.jpg'
 import thumImg3  from '../assets/hotel.png'
 
 
+import java from '../assets/java.svg'
+import react from '../assets/react.svg'
+import tailwind from '../assets/tailwind.svg' 
+
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { div } from "framer-motion/client";
+import { Code, Code2, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   useEffect(() => {
@@ -29,22 +35,24 @@ const Projects = () => {
     {
       image: thumImg,
       title: "Bloging Website",
+      icons:[java, react, tailwind],
       description:
-        "It is fully responsive blogging website using modern web technologies. The platform allows users to create, edit, and share blog posts seamlessly. It features a clean user interface, dynamic content rendering, and a functional backend for managing blogs, comments, and user authentication..",
+        "It is fully responsive blogging website with modern  technologies.The platform allows users to create, edit, and share blog posts seamlessly. ",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
       demoLink: "https://blog-app-eight-ashy-81.vercel.app",
     },
     {
       image: thumImg2,
-      title: "Resume Builder with AI features",
-      description: "Create Professional Resumes in Minutes.Create Smart, Fast & Free Resume Builder for Job Seekers.Design Beautiful, Job-Winning Resumes with Ease.Professional Templates + Smart Editing = Perfect Resume.",
-
+      title: "Resume Builder",
+      description: "Create Professional Resumes in Minutes.Design Beautiful, Job-Winning Resumes with Ease.Professional Templates + Smart Editing.",
+      icons:[java, react, tailwind],
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],      
       demoLink: "https://resume-builder-gules-three.vercel.app",
     },
     {
       image: thumImg3,
       title: "Hotel Booking website",
+      icons:[java, react, tailwind],
       description:
         "It is only for demo.",
       tech: ["React js", "Tailwind Css", "Vite" , "Nodejs" , "expressjs", "mongodb", "figma", "javaScript"],
@@ -56,54 +64,47 @@ const Projects = () => {
     <div className="mt-14 dark:bg-black">
       <section className="bg-slate-50 dark:bg-black   py-20 pb-32 px-6 md:px-16">
         <div data-aos="fade-down" className="max-w-6xl mx-auto transition-all duration-500 ">
-          <h2 className="text-4xl md:text-5xl dark:text-teal-400 font-semibold text-center mb-12">
-            My Projects
+          <div className="flex items-center justify-center gap-5 
+           
+          ">
+            <div className="border border-blue-400 size-15 bg-gray-700 rounded-2xl flex items-center justify-center">
+          <Code className="text-blue-500 size-7"/>
+            </div>
+          <h2 className="text-4xl md:text-5xl mt-10 dark:bg-linear-to-r  from-white  to-blue-500 dark:text-transparent bg-clip-text font-semibold text-center mb-12">
+            Featured Projects
           </h2>
+          </div> 
+           <div className="h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" style={{width:"100%"}}></div>
 
-          <div className="flex gap-10  flex-col items-center justify-center px-3">
-            {projects.map((project, index) => (
-              <div>
-              <div
-                key={index}
-                className="bg-gray-200 dark:bg-slate-950 dark:border-teal-500 dark:border  flex gap-y-10 h-225  md:max-h-80 w-100 md:w-250  
-                 rounded-2xl p-6 shadow-md  hover:shadow-xl transition"
-              >
-               <div className="flex gap-5 flex-col  md:flex-row">
-                
-                <div>
-                  <img src={project.image} className="rounded-xl w-80  md:w-120  h-full  " alt="" />
-                </div>
 
-                <div>
-                       <h1 className="mt-3  font-extrabold dark:text-teal-400 text-2xl">{project.title}</h1>
-                        
-                        <p className="w-xs    md:w-xl mt-2 text-gray-500 dark:text-white"> {project.description}</p>
-                             
-                             <div className="cursor-pointer grid grid-cols-2 md:grid-cols-4">
-                         {project.tech.map((techItem, i) => (
-                           <span
-                           key={i}
-                           className="bg-blue-800 text-white dark:bg-teal-400  flex items-center justify-center mt-4 ml-2  md:ml-2 px-2   py-1  rounded-full"
-                           >
-                      {techItem}
-                    </span>
-                  ))} 
-                  </div>
-                    
-                    <div className="mt-7 md:mt-3">
-                  <a href={project.demoLink} className="bg-slate-900  dark:text-teal-400
-                   hover:bg-slate-600 dark:border-teal-400 border dark:hover:bg-teal-900  text-white   px-4 py-1 rounded-full "> 
-                    Live Preview
-                  </a>
-                    </div>
-                         
-                </div>
-                </div>  
-                                   
+          <div className=" gap-10 mt-10  sm:px-30 grid grid-cols-2 items-center justify-center px-3">
+           {projects.map((item, index)=>{
+           return(
+            <div className="max-w-100 flex-col  flex border   border-gray-300 dark:border-blue-400 rounded-2xl ">
+             <div>
+              <img src={item.image} alt="" className="rounded-t-2xl  border-b border-gray-100  h-60 w-full"/>
+             </div>
+             <div className="mt-4 px-4"> 
+              <div className="flex justify-between">
+              <div className=" dark:text-white font-semibold font-serif text-xl"> {item.title} </div>
+              <div className="flex gap-4">
+                <img src={java} className="w-8 h-8 rounded-lg" alt=""/>
+                <img src={react} className="w-8 h-8 rounded-lg" alt=""/>
+                <img src={tailwind} className="w-8 h-8 rounded-lg" alt=""/>
+                 
               </div>
-                </div>
-            ))}
-          </div>
+              </div>
+              <div className="mt-3">
+                <p className="dark:text-gray-300 font-sans">{item.description}</p>
+              </div>
+              <Link to={item.demoLink} className="text-blue-400 flex gap-3 pb-6 mt-2">
+               <ExternalLink /> Live Demo
+              </Link>
+             </div>
+            </div>
+           )
+           })}
+        </div>
         </div>
       </section>
 
@@ -129,13 +130,13 @@ const Projects = () => {
         <div className="px-3">
            <div className="flex items-center justify-center">
           <h1 className="text-4xl flex  py-2 md:text-5xl lg:text-6xl
-            font-serif mb-10   font-semibold justify-center dark:text-teal-400">
+            font-serif mb-10   font-semibold justify-center dark:bg-linear-to-r dark:text-transparent bg-clip-text  from-white  to-blue-500 ">
             Experience  
           </h1>
-                  <hr className="h-10 w-20 mt-1 font-extrabold  dark:text-teal-400  text-gray-500 "/> 
+                  <hr className="h-10 w-20 mt-1 font-extrabold  dark:bg-linear-to-r  from-white  to-blue-500  dark:text-transparent bg-clip-text  text-black"/> 
               </div>
           <div className="flex">
-            <h1 className="text-xl dark:text-teal-400   py-2 md:text-4xl ">
+            <h1 className="text-xl dark:bg-linear-to-r  from-white  to-blue-500  dark:text-transparent bg-clip-text   py-2 md:text-4xl ">
               🧠 Professional Summary
             </h1>
           </div>
@@ -151,11 +152,12 @@ const Projects = () => {
         </div>
         {/*  */}
        
-       <hr className="text-gray-300 h-2 w-sm dark:text-teal-400 sm:w-xl  mt-4 "/>
+       <hr className=" h-0.5 w-sm  dark:bg-linear-to-r from-blue-300  to-blue-500  sm:w-xl  mt-4 "/>
 
         <div className="mt-8 px-3">
           <div className="flex">
-            <h1 className="text-xl py-2  md:text-4xl dark:text-teal-400 ">
+            <h1 className="text-xl py-2  md:text-4xl 
+            dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500  ">
               ⚙️ Core Skills
             </h1>
           </div>
@@ -167,12 +169,12 @@ const Projects = () => {
              <li className="mt-1"> Other: JWT Authentication, Responsive Design, Debugging, Performance Optimization </li>
           </div>
         </div>
-       <hr className="text-gray-300 h-2 w-sm dark:text-teal-400 sm:w-xl mt-4 "/>
+       <hr className=" h-0.5 w-sm  dark:bg-linear-to-r from-blue-300  to-blue-500  sm:w-xl  mt-4 "/>
 
 
         <div className="mt-5 px-3">
           <div className="flex">
-            <h1 className="md:text-4xl mt-3 dark:text-teal-400  py-2  text-xl">
+            <h1 className="md:text-4xl mt-3 dark:bg-linear-to-r dark:text-transparent bg-clip-text  from-white  to-blue-500   py-2  text-xl">
               🚀 Key Responsibilities & Achievements
             </h1>
           </div>

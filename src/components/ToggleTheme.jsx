@@ -21,7 +21,7 @@ const ToggleTheme = ({theme , setTheme}) => {
   return (
     <div>
         {theme === 'dark' ? (
-            <div  onClick={()=>setTheme('light')} className='h-10 flex text-teal-700  
+            <div  onClick={()=>setTheme('light')} className='h-10 flex text-blue-700  
             items-center cursor-pointer justify-center w-10 rounded-full border-2 ' >
                 <img src={sun_Icon} alt="" />
             </div>

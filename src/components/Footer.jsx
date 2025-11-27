@@ -22,7 +22,7 @@ const Footer = () => {
                 </div>
                 <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
                     <div>
-                        <h2 className="font-semibold mb-5 dark:text-teal-400 ">Company</h2>
+                        <h2 className="font-semibold mb-5 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500 ">Company</h2>
                         <ul className="text-sm space-y-2">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About us</a></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div>
-                        <h2 className="font-semibold mb-5 dark:text-teal-400">Get in touch</h2>
+                        <h2 className="font-semibold mb-5 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">Get in touch</h2>
                         <div className="text-sm space-y-2">
                             <p>+92-3423135480</p>
                             <p>hafizhaseeb4480@gmail.com</p>
