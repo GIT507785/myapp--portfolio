@@ -16,8 +16,8 @@ const ToggleTheme = ({theme , setTheme}) => {
     }
     localStorage.setItem('theme' , theme)
  },[theme])
-
-
+  
+  
   return (
     <div>
         {theme === 'dark' ? (

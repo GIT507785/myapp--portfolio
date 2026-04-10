@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import myImage from '../assets/haseeb.jpg'
+import myImage from '../assets/haseeb.jfif'
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css'
@@ -71,7 +71,7 @@ export default function AboutMe()  {
           <img
             src={myImage}
             alt="Your Name"
-            className="w-full h-full "
+            className=" "
           />
         </div>
 

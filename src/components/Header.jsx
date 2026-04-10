@@ -1,9 +1,8 @@
 import React, { useEffect } from "react";
-import myimage from '../assets/haseeb.jpg'
+import myimage from '../assets/haseeb.jfif'
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import 'aos/dist/aos.css'
-import backgroundImage from '../assets/gr_bg.png'
 
 
 export default function HeroSection() {
@@ -54,11 +53,11 @@ Aos.init({duration: 1000})
         </div>
 
         {/* Image or Illustration */}
-        <div className="md:w-1/2  flex justify-center">
+        <div className="md:w-1/2  flex items-center justify-center">
           <img
             src={myimage}
             alt="Developer"
-            className="rounded-full shadow-2xl  w-72 h-72 object-cover 
+            className="rounded-full shadow-2xl object-[50%_10%]  w-72 h-72 object-cover 
             dark:border-blue-400
              border-pink-800  border-8  "
           />
