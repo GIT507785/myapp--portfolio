@@ -27,85 +27,137 @@ const [result, setResult] = React.useState("");
   };
 
   return ( 
-    <div className='pt-30 '>
+   <div className="pt-16 sm:mt-20 mt-10">
+  <div className="px-4 sm:px-6 lg:px-20 font-serif dark:bg-black dark:text-white">
 
-    <div className= 'px-3 md:px-32 font-serif dark:bg-black dark:text-white'>
-         <h1 className='flex justify-center text-4xl font-bold   md:text-5xl  
-          dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500 lg:text-6xl '> Contact  <span className='text-blue-80 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500'> US</span> </h1>
-      <div className=' mt-[100px] text-sm  md:text-xl '>
-        <hr  className='px-32 mt-[-50px] text-gray-400 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500'/>
-        <p className='mt-8  '>
-            Thank you for your interest in our  Developing servicies  services.
-             We are glad to hear that you found our experience impressive and would like to work with us.     </p>
-<br />
-             <p> If you have any specific requirements or questions about our services, please don't hesitate to contact us. We are more than happy to help and provide you with a personalized solution that meets your needs.</p>
-<br />
-             <p>
-                To get started, follow the contact email below and let us know what you are looking for. We will get back to you as soon as possible.
-             </p>
-<br />
-             <p className='mb-5'> We look forward to hearing from you soon and working together to achieve your goals.</p>
+    {/* Heading */}
+    <h1 className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold 
+    bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+      Contact <span>Us</span>
+    </h1>
 
-      </div> 
+    {/* Intro */}
+    <div className="mt-12 text-sm sm:text-base md:text-lg max-w-4xl mx-auto">
+      <hr className="border-gray-400 mb-6" />
 
+      <p>
+        Thank you for your interest in our developing services. We are glad to hear that you found our experience impressive and would like to work with us.
+      </p>
 
- <div>
+      <p className="mt-4">
+        If you have any specific requirements or questions about our services, please don't hesitate to contact us.
+      </p>
 
- <div className='md:flex  sm:flex-cols  sm:mb-14 text-sm  md:text-xl   mt-20 gap-10'>
-          <div>
-<h1 className='text-3xl md:text-5xl  lg:text-6xl  text-blue-800 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500 font-semibold'> Thank You So Much</h1> 
-<p className='mt-7 text-sm  md:text-xl '>  I would like to express my sincere gratitude for taking the time to review my portfolio.</p> 
-<br /> 
-<p> Your interest and attention to my work are highly appreciated, and I hope that it <br /> has provided you with valuable insights into my expertise and capabilities.</p>
-<br />
-<p> I am thrilled to learn that you found my portfolio informative and useful. It is my pleasure <br /> to offer my services to help you take your marketing efforts to the next level. With my <br /> experience and expertise, I am confident that I can  provide you <br /> with the necessary support and guidance to achieve your marketing goals.</p>
-<br />
-<p>
-    Thank you once again for your time and consideration. I look forward to the opportunity to work with you and your team.
-</p>
-<br />
-<p className='font-semibold text-2xl dark:bg-linear-to-r dark:text-transparent bg-clip-text from-blue-200 
- to-blue-500'> Best regards,</p> 
-<br />
-<p className='text-green-800 font-semibold text-2xl dark:bg-linear-to-r dark:text-transparent
- bg-clip-text from-blue-300  to-blue-700'>MUHAMMAD HASEEB</p>
-          </div>  
- {/* Left */}
-<div>
-    <img src={contactimg} alt="" className='w-[400px] mt-14'   />
- </div>
+      <p className="mt-4">
+        To get started, follow the contact email below and let us know what you are looking for.
+      </p>
+
+      <p className="mt-4">
+        We look forward to working with you.
+      </p>
+    </div>
+
+    {/* Content Section */}
+    <div className="mt-16 flex flex-col lg:flex-row items-center gap-10">
+
+      {/* Left Text */}
+      <div className="flex-1">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold 
+        bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+          Thank You So Much
+        </h1>
+
+        <p className="mt-6 text-sm sm:text-base md:text-lg">
+          I would like to express my sincere gratitude for reviewing my portfolio.
+        </p>
+
+        <p className="mt-4">
+          Your interest is highly appreciated and I hope it gave you insight into my expertise.
+        </p>
+
+        <p className="mt-4">
+          I’m confident I can help you achieve your marketing goals.
+        </p>
+
+        <p className="mt-4">
+          Looking forward to working with you.
+        </p>
+
+        <p className="mt-6 text-xl font-semibold text-blue-500">Best regards,</p>
+        <p className="text-xl font-bold text-green-600">MUHAMMAD HASEEB</p>
+      </div>
+
+      {/* Right Image */}
+      <div className="flex-1 flex justify-center">
+        <img 
+          src={contactimg} 
+          alt="contact" 
+          className="w-full max-w-md object-contain"
+        />
+      </div>
+    </div>
+
+    {/* Form */}
+    <form onSubmit={onSubmit} className="mt-20 flex flex-col items-center text-sm">
+
+      <p className="text-blue-600 font-medium font-serif dark:text-white">
+        Contact Us
+      </p>
+
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center 
+      bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+        Get in touch with us
+      </h1>
+
+      <p className="text-gray-500 text-center mt-2 mb-8 max-w-xl dark:text-white">
+        I’m open to freelance opportunities and collaborations.
+      </p>
+
+      {/* Inputs */}
+      <div className="flex flex-col md:flex-row gap-6 w-full max-w-2xl">
+
+        <div className="w-full">
+          <label>Your Name</label>
+          <input
+            className="h-12 p-2 mt-2 w-full border rounded outline-none focus:border-indigo-400"
+            type="text"
+            required
+          />
+        </div>
+
+        <div className="w-full">
+          <label>Your Email</label>
+          <input
+            className="h-12 p-2 mt-2 w-full border rounded outline-none focus:border-indigo-400"
+            type="email"
+            required
+          />
+        </div>
+
+      </div>
+
+      {/* Textarea */}
+      <div className="mt-6 w-full max-w-2xl">
+        <label>Message</label>
+        <textarea
+          className="w-full mt-2 p-2 h-40 border rounded resize-none outline-none focus:border-indigo-400"
+          required
+        ></textarea>
+      </div>
+
+      {/* Button */}
+      <button
+        type="submit"
+        className="mt-6 bg-indigo-600 text-white h-12 w-48 rounded active:scale-95 transition"
+      >
+        Send Message
+      </button>
+
+      <span className="mt-4">{result}</span>
+    </form>
+
+  </div>
 </div>
-
-  
- </div>
-
-    <form onSubmit={onSubmit}  class="flex flex-col items-center text-sm">
-    <p class="text-lg text-blue-600 font-medium pb-2 font-serif dark:text-white">Contact Us</p>
-    <h1 class="text-4xl font-semibold text-slate-700 pb-4 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500">Get in touch with us</h1>
-    <p class="text-sm text-gray-500 text-center pb-10 dark:text-white"> I’m open to freelance opportunities, collaboration, and full-time roles. <br /> If you have an idea or project in mind, don’t hesitate to reach out!</p>
-    
-    <div class="flex flex-col md:flex-row items-center gap-8 w-[350px] md:w-[700px]">
-        <div class="w-full">
-            <label class="text-black/70 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500" for="name">Your Name</label>
-            <input class="h-12 p-2 mt-2 w-full border dark:border-blue-400 border-gray-500/30 rounded outline-none focus:border-indigo-300" type="text" required />
-        </div>
-        <div class="w-full ">
-            <label class="text-black/70 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500"  for="name">Your Email</label>
-            <input class="h-12 p-2 mt-2 w-full border dark:border-blue-400  border-gray-500/30 rounded outline-none focus:border-indigo-300" type="email" required/>
-        </div>
-    </div>
-
-    <div class="mt-6 w-[350px] md:w-[700px]">
-        <label class="text-black/70 dark:bg-linear-to-r dark:text-transparent bg-clip-text from-white  to-blue-500" for="name">Message</label>
-        <textarea class="w-full mt-2 p-2 h-40 border dark:border-blue-400  border-gray-500/30 rounded resize-none outline-none focus:border-indigo-300" required></textarea>
-    </div>
-
-    <button  type="submit" class="mt-5 mb-4 cursor-pointer  bg-indigo-600 dark:bg-blue-400
-     text-white h-12 w-56 px-4 rounded active:scale-95 transition">Send Message</button>
-</form>
-<span>{result}</span>
-    </div>
-    </div>
   )
 }
 
