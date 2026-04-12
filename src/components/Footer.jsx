@@ -16,8 +16,8 @@ const Footer = () => {
                     </p>
                     <div className="flex items-center gap-2 mt-4 rounded-full">
                        <a href=" https://wa.me/+923423135480"> <img src={whatsapp_icon} alt="" /> </a>    
-                       <a href=""> <img src={fasebook_icon} alt="" /> </a>    
-                       <a href=""> <img src={linkdin_icon} alt="" /> </a>    
+                       {/* <a href=""> <img src={fasebook_icon} alt="" /> </a>     */}
+                       {/* <a href=""> <img src={linkdin_icon} alt="" /> </a>     */}
                     </div>
                 </div>
                 <div className="flex-1 flex items-start md:justify-end gap-20 md:gap-40">
